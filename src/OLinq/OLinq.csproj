@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>$(NetLibVersion)</TargetFramework>
+    <RootNamespace>OLinq</RootNamespace>
+    <AssemblyName>OLinq</AssemblyName>
+    <Description>A .NET library that wraps OData operations under LINQ syntax for easy OData query building.</Description>
+    <PackageTags>odata;linq;query;http</PackageTags>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Text.Json" />
+    <PackageReference Include="Microsoft.Extensions.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
+      <_Parameter1>OLinq.Tests</_Parameter1>
+    </AssemblyAttribute>
+  </ItemGroup>
+</Project>
